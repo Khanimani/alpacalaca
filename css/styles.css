@@ -1,0 +1,177 @@
+/* colours */
+:root{
+  --primary: #B88E5F;
+  --secondary: #896A46;
+  --title: #FF8816;
+}
+
+/* layout styles */
+
+body {
+	margin: 0; height: 100%; overflow: hidden
+}
+
+a{
+	cursor: pointer;
+
+}
+.startbutton {
+z-index:1;
+border: none;
+color: white;
+padding-top: 25px;
+padding-bottom:30px;
+padding-left: 55px;
+padding-right: 55px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family: giulia-plain, sans-serif;
+font-weight: 300;
+font-size: 100px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 30px;
+}
+
+
+.rulesbutton {
+position: relative;
+border: none;
+color: white;
+padding-top: 25px;
+padding-bottom:25px;
+padding-left: 55px;
+padding-right: 55px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family: giulia-plain, sans-serif;
+font-weight: 300;
+font-size: 45px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 20px;
+}
+
+.nextbutton {
+position: relative;
+border: none;
+color: white;
+padding-top: 25px;
+padding-bottom:25px;
+padding-left: 55px;
+padding-right: 55px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family: giulia-plain, sans-serif;
+font-weight: 300;
+font-size: 30px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 20px;
+}
+
+.sectiontop{
+	padding-top: 25vh;
+}
+
+.sectionbot{
+	padding-top: 85vh;
+}
+
+.bgimg{
+	height: auto;
+	width: 100vw;
+}
+nav{
+	position: fixed;
+  background: var(--primary);
+			  z-index: 3;
+
+}
+
+.sidenav{
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+#addPlayer{
+
+}
+
+.buttoncolor{
+background: #975F5F;
+background-color: #975F5F;
+
+}
+
+.alpacalaca{
+font-family: giulia-plain, sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+.scene{
+	position: fixed;
+	top: 0;
+	z-index: 1;
+
+}
+
+#soundbutton{
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  transition: 2s ease-in-out;
+  position: relative;
+  padding-left: 0vw;
+}
+
+.slide__content {
+width: 600vw;
+display: flex;
+}
+
+#home{
+	background-color: cadetblue;
+}
+
+#playerselection{
+	background-color: goldenrod;
+
+}
+
+
+#shop{
+		background-color: darkseagreen;
+}
+
+.items{
+	z-index: 4;
+}
+
+#field{
+			background-color: darkseagreen;
+
+}
+
+#event{
+			background-color: darkseagreen;
+
+}
+
+#alpaka{
+			background-color: darkseagreen;
+
+}
