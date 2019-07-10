@@ -1,0 +1,50 @@
+body {
+	margin: 0; height: 100%; overflow: hidden
+}
+
+a{
+	cursor: pointer;
+}
+
+nav{
+  position: fixed;
+  z-index: 2;
+}
+
+.section{
+	text-align:center;
+}
+
+#wrapitall{
+
+  width:100vh;
+  height:100vw;
+}
+
+.startbutton {
+border: none;
+color: white;
+padding-top: 25px;
+padding-bottom:30px;
+padding-left: 55px;
+padding-right: 55px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family: giulia-plain, sans-serif;
+font-weight: 300;
+font-size: 100px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 30px;
+}
+
+.items{
+float: left;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: green;
+  height: 200px;
+  width: 200px;
+}
