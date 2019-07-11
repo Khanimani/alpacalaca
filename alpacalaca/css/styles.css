@@ -1,7 +1,9 @@
 body {
 	margin: 0; height: 100%;
   overflow: hidden;
+  font-family: giulia-plain, sans-serif;
 }
+
 
 a{
 	cursor: pointer;
@@ -13,22 +15,74 @@ nav{
 }
 
 h1{
-  padding: 20px;
+margin-top: 12%;
+color: white;
 }
+nav{
+  z-index: 5;
+}
+
+
+/* The animation code */
+@keyframes opacity {
+  0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    30% {
+        display: block;
+        opacity: 1;
+    }
+    70% {
+        display: block;
+        opacity: 1;
+    }
+
+    90% {
+        display: none;
+        opacity: 0;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+
+
+#transperson{
+  position: fixed;
+  background-color: red;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  animation-name: opacity;
+  animation-duration: 4s;
+  z-index: 10;
+}
+
 .section{
 	text-align:center;
 }
+
 
 .header{
   z-index: 2;
   display: inline;
   position: absolute;
-  top: 180px;
+  top: 8vh;
   left: 0px;
   width: 100vw;
-  height: 50px;
-  background-color: red;
-}
+  height: auto;
+	font-weight: 200;
+	font-size: 30px;}
+
 
 #wrapitall{
 
@@ -37,12 +91,18 @@ h1{
 }
 
 .wrapshop{
-  background-color: blue;
-  width: 100vw;
-  height: 100vh;
-  padding: 100px 40px 40px 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 80vw;
+  height: 45vh;
+  padding: 10px 10px 10px 120px;
+  border-radius: 30px;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.wrapevent{
+  width: 100vw;
+  height: 45vh;
 }
 
 .startbutton {
@@ -63,12 +123,34 @@ cursor: pointer;
 border-radius: 30px;
 }
 
+.nextbutton {
+  position: static;
+border: none;
+color: white;
+padding: 20px 40px 20px 40px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family: giulia-plain, sans-serif;
+font-weight: 300;
+font-size: 40px;
+margin-left: 80vw;
+margin-left: 20;
+cursor: pointer;
+border-radius: 30px;
+}
+
+
 .items{
 float: left;
   padding: 20px;
   margin: 20px;
-  border-radius: 5px;
-  background-color: green;
-  height: 200px;
+  border-radius: 10px;
+  border-style: solid;
+  height: 350px;
   width: 200px;
+}
+
+#item1{
+  background-image: url(./img/accessory/Airhorn.jpg);
 }

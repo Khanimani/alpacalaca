@@ -153,7 +153,7 @@
             recordHistory: true,
 
             //design
-            controlArrows: true,
+            controlArrows: false,
             controlArrowColor: '#fff',
             verticalCentered: true,
             sectionsColor : [],

@@ -5,6 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://use.typekit.net/vce4hkk.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link type="text/css" href="./css/styles.css" rel="stylesheet">
 	<link type="text/css" href="./css/fullpage.css" rel="stylesheet">
@@ -82,77 +83,123 @@
 		</div>
 	</div>
 
+
 	<!-- Die App -->
+
+	<div id="transperson"><h1 id="playername"></h1> <h1>Du bist dran.</h1></div>
 	<div id="fullpage">
 
 		<div class="section" id="section1">
 			<div class="slide" id="slide1">
-				<a href="#home/1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+
+				<a href="#home/1"><button  class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
 			</div>
 
 			<div class="slide" id="slide2">
-				<h1>Choose Players</h1>
+				<h1>Select Players</h1>
+				<h2>Player1</h2>
+				<h2>Player2</h2>
+				<h2>Player3</h2>
+				<h2>Player4</h2>
 
-				<a href="#player1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+				<a href="#player1"><button class="nextbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
 
 			</div>
 		</div>
 
 		<div class="section" id="section2">
 
-			<div class="header">Player 1</div>
+			<div class="header"><span id="spielername1">Player 1</span><br><span id="Litnesswert1">31</span>&nbsp;
+Litpoints<br><span id="siegpunkte">420</span>&nbsp;
+Appreciation</div>
 
 			<div class="slide" id="slide3">
 				<h1>Shop</h1>
-				<div class="wrapshop">
-					<div class="items"></div>
-					<div class="items"></div>
-					<div class="items"></div>
-					<div class="items"></div>
-					<div class="items"></div>
-					<div class="items"></div>
-					<div class="items"></div>
-					<a href="#player1/1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
 
+				<div class="wrapshop">
+					<div id="item1" class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
 				</div>
+				<a href="#player1/1"><button class="nextbutton waves-effect waves-light green darken-1 z-depth-2">Next</button></a>
+
 			</div>
 
 			<div class="slide" id="slide4">
-				<a href="#player2"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+				<h1>Field</h1>
+				<div class="wrapevent">
+					<a href="#Alpaka?"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Alpaka</button></a>
+					<br><a href="#Event"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Event</button></a>
+
+				</div>
+				<!-- onclick="yourturn();" ist den Namen einblenden. Das klappt leider noch nicht. :/  -->
+
+				<a href="#player2"><button class="nextbutton waves-effect waves-light green darken-1 z-depth-2">Next</button></a>
 
 			</div>
 
 		</div>
 
 		<div class="section" id="section3">
-			<div class="header">Player 2</div>
-
-
-			<div class="slide" id="slide5">
+			<div class="header"><span id="spielername1">Player 2</span><br><span id="Litnesswert1">31</span>&nbsp;
+Litpoints<br><span id="siegpunkte">420</span>&nbsp;
+Appreciation</div>
+			<div class="slide" id="slide3">
 				<h1>Shop</h1>
+
 				<div class="wrapshop">
 					<div class="items"></div>
 					<div class="items"></div>
 					<div class="items"></div>
 					<div class="items"></div>
-					<a href="#player2/1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
-
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
 				</div>
+				<a href="#player2/1"><button class="nextbutton waves-effect waves-light green darken-1 z-depth-2">Next</button></a>
+
 			</div>
 
-			<div class="slide" id="slide6">
-				<a href="#player3"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+			<div class="slide" id="slide4">
+				<h1>Field</h1>
+				<div class="wrapevent">
+					<a href="#Alpaka?"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Alpaka</button></a>
+					<br><a href="#Event"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Event</button></a>
+				</div>
+
+				<a href="#player3"><button class="nextbutton waves-effect waves-light green darken-1 z-depth-2">Next</button></a>
 
 			</div>
 
 		</div>
 
 		<div class="section" id="section4">
-			<div class="header">Player 3</div>
-
-
-			<div class="slide" id="slide7">
+			<div class="header"><span id="spielername1">Player 3</span><br><span id="Litnesswert1">31</span>&nbsp;
+Litpoints<br><span id="siegpunkte">420</span>&nbsp;
+Appreciation</div>
+			<div class="slide" id="slide3">
 				<h1>Shop</h1>
+
 				<div class="wrapshop">
 					<div class="items"></div>
 					<div class="items"></div>
@@ -161,36 +208,68 @@
 					<div class="items"></div>
 					<div class="items"></div>
 					<div class="items"></div>
-					<a href="#player3/1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
-
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
 				</div>
+				<a href="#player3/1"><button class="nextbutton waves-effect waves-light green darken-1 z-depth-2">Next</button></a>
+
 			</div>
 
-			<div class="slide" id="slide8">
-				<a href="#player4"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+			<div class="slide" id="slide4">
+				<h1>Field</h1>
+				<div class="wrapevent">
+					<a href="#Alpaka?"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Alpaka</button></a>
+					<br><a href="#Event"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Event</button></a>
+				</div>
+
+				<a href="#player4"><button class="nextbutton waves-effect waves-light green darken-1 z-depth-2">Next</button></a>
 
 			</div>
 
 		</div>
 
 		<div class="section" id="section5">
-			<div class="header">Player 4</div>
-
-
-			<div class="slide" id="slide9">
+			<div class="header"><span id="spielername1">Player 4</span><br><span id="Litnesswert1">31</span>&nbsp;
+Litpoints<br><span id="siegpunkte">420</span>&nbsp;
+Appreciation</div>
+			<div class="slide" id="slide3">
 				<h1>Shop</h1>
+
 				<div class="wrapshop">
 					<div class="items"></div>
 					<div class="items"></div>
 					<div class="items"></div>
 					<div class="items"></div>
-					<a href="#player4/1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
-
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
 				</div>
+				<a href="#player4/1"><button class="nextbutton waves-effect waves-light green darken-1 z-depth-2">Next</button></a>
+
 			</div>
 
-			<div class="slide" id="slide10">
-				<a href="#player1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+			<div class="slide" id="slide4">
+				<h1>Field</h1>
+				<div class="wrapevent">
+					<a href="#Alpaka?"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Alpaka</button></a>
+					<br><a href="#Event"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Event</button></a>
+				</div>
+
+				<a href="#player1"><button class="nextbutton waves-effect waves-light green darken-1 z-depth-2">Next</button></a>
 
 			</div>
 
@@ -201,7 +280,7 @@
 		<script type="text/javascript">
 			var myFullpage = new fullpage('#fullpage', {
 				anchors: ['home', 'player1', 'player2', 'player3', 'player4'],
-				sectionsColor: ['cadetblue', '#1BBC9B', '#7E8F7C', 'goldenrod'],
+				sectionsColor: ['cadetblue', 'darkseagreen', 'cadetblue', 'darkseagreen', 'cadetblue'],
 				scrollBar: true,
 				autoScrolling: false,
 			});
@@ -253,8 +332,12 @@
 			new fullpage('#fullpage', {
 				sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
 			});
-		</script>
 
+			//transperson
+			function yourturn() {
+				document.getElementById("transperson").style.display = "block";
+}
+		</script>
 
 </body>
 
