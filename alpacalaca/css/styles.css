@@ -1,5 +1,6 @@
 body {
-	margin: 0; height: 100%; overflow: hidden
+	margin: 0; height: 100%;
+  overflow: hidden;
 }
 
 a{
@@ -11,14 +12,37 @@ nav{
   z-index: 2;
 }
 
+h1{
+  padding: 20px;
+}
 .section{
 	text-align:center;
+}
+
+.header{
+  z-index: 2;
+  display: inline;
+  position: absolute;
+  top: 180px;
+  left: 0px;
+  width: 100vw;
+  height: 50px;
+  background-color: red;
 }
 
 #wrapitall{
 
   width:100vh;
   height:100vw;
+}
+
+.wrapshop{
+  background-color: blue;
+  width: 100vw;
+  height: 100vh;
+  padding: 100px 40px 40px 100px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .startbutton {

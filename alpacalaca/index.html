@@ -18,7 +18,7 @@
 
 <body>
 	<nav class="z-depth-2">
-		<div class="nav-wrapper orange lighten-4"> <a href="#firstPage" class="brand-logo center">
+		<div class="nav-wrapper orange lighten-4"> <a href="#home" class="brand-logo center">
 				<span class="logo alpacalaca brown-text">Alpacalaca</span></a>
 			<a href="#" data-target="mobile-demo" class="sidenav-trigger">
 				<i class="material-icons brown orange-text text-lighten-4">menu</i></a>
@@ -87,96 +87,173 @@
 
 		<div class="section" id="section1">
 			<div class="slide" id="slide1">
-				<a href="#firstPage/1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+				<a href="#home/1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
 			</div>
 
 			<div class="slide" id="slide2">
 				<h1>Choose Players</h1>
 
-					<a href="#firstPage/2"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+				<a href="#player1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
 
+			</div>
+		</div>
 
+		<div class="section" id="section2">
 
+			<div class="header">Player 1</div>
 
 			<div class="slide" id="slide3">
 				<h1>Shop</h1>
 				<div class="wrapshop">
-			<div class="items"></div>
-			<div class="items"></div>
-			<div class="items"></div>
-			<div class="items"></div>
-			<a href="#firstPage/3"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<a href="#player1/1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
 
-		</div>
+				</div>
 			</div>
 
-			<div class="slide" id="slide3">
-				<a href="#secondPage"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+			<div class="slide" id="slide4">
+				<a href="#player2"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
 
 			</div>
 
+		</div>
+
+		<div class="section" id="section3">
+			<div class="header">Player 2</div>
+
+
+			<div class="slide" id="slide5">
+				<h1>Shop</h1>
+				<div class="wrapshop">
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<a href="#player2/1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+
+				</div>
+			</div>
+
+			<div class="slide" id="slide6">
+				<a href="#player3"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+
+			</div>
 
 		</div>
 
-		<div class="section id="section2"></div>
-	</div>
+		<div class="section" id="section4">
+			<div class="header">Player 3</div>
 
 
-	<script type="text/javascript">
-		var myFullpage = new fullpage('#fullpage', {
-			anchors: ['firstPage', 'secondPage', '3rdPage'],
-			sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-			scrollBar: true
-		});
-	</script>
+			<div class="slide" id="slide7">
+				<h1>Shop</h1>
+				<div class="wrapshop">
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<a href="#player3/1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+
+				</div>
+			</div>
+
+			<div class="slide" id="slide8">
+				<a href="#player4"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+
+			</div>
+
+		</div>
+
+		<div class="section" id="section5">
+			<div class="header">Player 4</div>
+
+
+			<div class="slide" id="slide9">
+				<h1>Shop</h1>
+				<div class="wrapshop">
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<div class="items"></div>
+					<a href="#player4/1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+
+				</div>
+			</div>
+
+			<div class="slide" id="slide10">
+				<a href="#player1"><button class="startbutton waves-effect waves-light amber darken-1 z-depth-2">Start</button></a>
+
+			</div>
+
+		</div>
+
+
+
+		<script type="text/javascript">
+			var myFullpage = new fullpage('#fullpage', {
+				anchors: ['home', 'player1', 'player2', 'player3', 'player4'],
+				sectionsColor: ['cadetblue', '#1BBC9B', '#7E8F7C', 'goldenrod'],
+				scrollBar: true,
+				autoScrolling: false,
+			});
+		</script>
 
 
 
 
 
-	<!-- Scripts -->
+		<!-- Scripts -->
 
-	<script>
-		// Sidenav
-		var elem = document.querySelector('.sidenav');
-		var instance = new M.Sidenav(elem);
+		<script>
+			// Sidenav
+			var elem = document.querySelector('.sidenav');
+			var instance = new M.Sidenav(elem);
 
-		// Modal
-		$(document).ready(function() {
-			$('.modal').modal();
-		});
+			// Modal
+			$(document).ready(function() {
+				$('.modal').modal();
+			});
 
-		//Volume
-		/*function changeIcon() {
-		  document.getElementById("volume").innerHTML = "volume_off";
-		}*/
+			//Volume
+			/*function changeIcon() {
+			  document.getElementById("volume").innerHTML = "volume_off";
+			}*/
 
-		function changeIcon() {
-			var x = document.getElementById("volume");
-			if (x.innerHTML === "volume_up") {
-				x.innerHTML = "volume_off";
-			} else {
-				x.innerHTML = "volume_up";
+			function changeIcon() {
+				var x = document.getElementById("volume");
+				if (x.innerHTML === "volume_up") {
+					x.innerHTML = "volume_off";
+				} else {
+					x.innerHTML = "volume_up";
+				}
 			}
-		}
 
-		//Smooth Scrollen
-		$('a[href^="#"]').on('click', function(event) {
-			var target = $(this.getAttribute('href'));
+			//Smooth Scrollen
+			$('a[href^="#"]').on('click', function(event) {
+				var target = $(this.getAttribute('href'));
 
-			if (target.length) {
-				event.preventDefault();
-				$('html, body').stop().animate({
-					scrollLeft: target.offset().left
-				}, 700);
-			}
-		});
+				if (target.length) {
+					event.preventDefault();
+					$('html, body').stop().animate({
+						scrollLeft: target.offset().left
+					}, 700);
+				}
+			});
 
-		//fullpage
-		new fullpage('#fullpage', {
-			sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
-		});
-	</script>
+			//fullpage
+			new fullpage('#fullpage', {
+				sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+			});
+		</script>
 
 
 </body>

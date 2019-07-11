@@ -123,7 +123,7 @@
             css3: true,
             scrollingSpeed: 700,
             autoScrolling: true,
-            fitToSection: true,
+            fitToSection: false,
             fitToSectionDelay: 1000,
             easing: 'easeInOutCubic',
             easingcss3: 'ease',
@@ -307,7 +307,7 @@
                 }
             }else{
                 css($htmlBody, {
-                    'overflow' : 'visible',
+                    'overflow' : 'hidden',
                     'height' : 'initial'
                 });
 
@@ -641,8 +641,8 @@
 
             //using jQuery initialization? Creating the $.fn.fullpage object
             if(options.$){
-                Object.keys(FP).forEach(function (key) {    
-                    options.$.fn.fullpage[key] = FP[key];   
+                Object.keys(FP).forEach(function (key) {
+                    options.$.fn.fullpage[key] = FP[key];
                 });
             }
 
@@ -803,7 +803,7 @@
         }
 
         /**
-        * Checks the viewport a few times on a define interval of time to 
+        * Checks the viewport a few times on a define interval of time to
         * see if it has changed in any of those. If that's the case, it resizes.
         */
         function doubleCheckHeight(){
@@ -1323,12 +1323,12 @@
             var top = rect.top;
             var bottom = rect.bottom;
 
-            //sometimes there's a 1px offset on the bottom of the screen even when the 
+            //sometimes there's a 1px offset on the bottom of the screen even when the
             //section's height is the window.innerHeight one. I guess because pixels won't allow decimals.
-            //using this prevents from lazyLoading the section that is not yet visible 
+            //using this prevents from lazyLoading the section that is not yet visible
             //(only 1 pixel offset is)
             var pixelOffset = 2;
-            
+
             var isTopInView = top + pixelOffset < windowsHeight && top > 0;
             var isBottomInView = bottom > pixelOffset && bottom < windowsHeight;
 
@@ -2007,7 +2007,7 @@
 
         /**
         * Makes sure lazyload is done for other sections in the viewport that are not the
-        * active one. 
+        * active one.
         */
         function lazyLoadOthers(){
             var hasAutoHeightSections = $(AUTO_HEIGHT_SEL)[0] || isResponsiveMode() && $(AUTO_HEIGHT_RESPONSIVE_SEL)[0];
@@ -2618,15 +2618,15 @@
 
         /*
         * Resize event handler.
-        */        
+        */
         function resizeHandler(){
             clearTimeout(resizeId);
 
             //in order to call the functions only when the resize is finished
-            //http://stackoverflow.com/questions/4298612/jquery-how-to-call-resize-event-only-once-its-finished-resizing    
+            //http://stackoverflow.com/questions/4298612/jquery-how-to-call-resize-event-only-once-its-finished-resizing
             resizeId = setTimeout(function(){
 
-                //issue #3336 
+                //issue #3336
                 //(some apps or browsers, like Chrome/Firefox for Mobile take time to report the real height)
                 //so we check it 3 times with intervals in that case
                 for(var i = 0; i< 4; i++){
@@ -3251,7 +3251,7 @@
             addClass(container, DESTROYED);
 
             [
-                afterSlideLoadsId, 
+                afterSlideLoadsId,
                 afterSectionLoadsId,
                 resizeId,
                 scrollId,
